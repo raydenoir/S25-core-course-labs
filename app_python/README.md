@@ -6,8 +6,50 @@ Simple Python web application for Lab 1 that displays the current time in Moscow
 
 - Python 3.7+
 - Dependencies listed in `requirements.txt`
+  or
+- Docker
 
-## Setup
+## Docker
+
+### How to build?
+
+```bash
+docker build -t app_python:alpine .
+```
+
+### How to pull
+
+```bash
+docker pull raydenoir/app_python:alpine
+```
+
+### How to Run
+
+```bash
+docker run -p 127.0.0.1:<desired_port>:8000 -d --name app_python-alpine app_python:alpine
+```
+
+## Docker Distroless Image Version
+
+### How to build?
+
+```bash
+docker build -f distroless.Dockerfile -t app_python:distroless .
+```
+
+### How to pull
+
+```bash
+docker pull raydenoir/app_python:distroless
+```
+
+### How to Run
+
+```bash
+docker run -p 127.0.0.1:<desired_port>:8000 -d --name app_python-distroless app_python:distroless
+```
+
+## Manual Setup
 
 1. Clone the repository
 
