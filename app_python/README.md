@@ -1,6 +1,6 @@
-![Python App CI](https://github.com/raydenoir/S25-core-course-labs/actions/workflows/app_python.yml/badge.svg)
-
 # Moscow Time Web Application
+
+![Python App CI](https://github.com/raydenoir/S25-core-course-labs/actions/workflows/app_python.yml/badge.svg)
 
 Simple Python web application for Lab 1 that displays the current time in Moscow. It is built using the FastAPI framework and Jinja2 templating for rendering the HTML page.
 
@@ -87,11 +87,11 @@ pytest
 
 ## Continuous Integration (CI)
 
-### Workflow Triggers:
+### Workflow Triggers
 
 - The CI workflow runs **only when files inside the `app_python/` directory change**.
 
-### Workflow Steps:
+### Workflow Steps
 
 1. **Dependencies**: Installs required dependencies.
 2. **Linter**: Runs `flake8` to ensure code quality.
