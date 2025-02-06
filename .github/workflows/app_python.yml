@@ -74,7 +74,7 @@ jobs:
       - name: Run Snyk Code Scan
         run: |
           cd app_python
-          snyk code test --json | snyk-to-html -o snyk-results.html
+          snyk code test --json | snyk-to-html -o ../snyk-results.html
         continue-on-error: true
 
       - name: Upload Snyk Findings
