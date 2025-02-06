@@ -35,6 +35,7 @@ jobs:
       - name: Run Tests (pytest)
         run: |
           pip install pytest
+          cd app_python
           pytest
 
   docker:
