@@ -74,3 +74,11 @@ uvicorn app.main:app --reload
 ## Using the Application
 
 Go to <http://127.0.0.1:8000/time> (in case it runs locally)
+
+## Unit Tests
+
+To run unit tests, use
+
+```bash
+pytest
+```
