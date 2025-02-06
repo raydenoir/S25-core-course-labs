@@ -1,3 +1,5 @@
+![Python App CI](https://github.com/raydenoir/S25-core-course-labs/actions/workflows/app_python.yml/badge.svg)
+
 # Moscow Time Web Application
 
 Simple Python web application for Lab 1 that displays the current time in Moscow. It is built using the FastAPI framework and Jinja2 templating for rendering the HTML page.
