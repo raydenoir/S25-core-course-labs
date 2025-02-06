@@ -10,5 +10,5 @@ def get_moscow_time_page(request: Request):
     """Controller function to get Moscow time and render the template."""
     current_time = get_moscow_time()
     return templates.TemplateResponse(
-        "moscow_time.html", {"request": request, "current_time": current_time}
+        request, "moscow_time.html", {"current_time": current_time}
     )
