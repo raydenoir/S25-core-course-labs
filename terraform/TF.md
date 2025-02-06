@@ -127,7 +127,7 @@ Terraform will perform the following actions:
       + log_driver                                  = (known after apply)
       + logs                                        = false
       + must_run                                    = true
-      + name                                        = "tutorial"
+      + name                                        = "lab4"
       + network_data                                = (known after apply)
       + read_only                                   = false
       + remove_volumes                              = true
@@ -149,7 +149,7 @@ Terraform will perform the following actions:
       + labels (known after apply)
 
       + ports {
-          + external = 8000
+          + external = 8080
           + internal = 80
           + ip       = "0.0.0.0"
           + protocol = "tcp"
