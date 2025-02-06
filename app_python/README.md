@@ -6,7 +6,7 @@ Simple Python web application for Lab 1 that displays the current time in Moscow
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.9+
 - Dependencies listed in `requirements.txt`
   or
 - Docker
@@ -84,3 +84,21 @@ To run unit tests, use
 ```bash
 pytest
 ```
+
+## Continuous Integration (CI)
+
+### Workflow Triggers:
+
+- The CI workflow runs **only when files inside the `app_python/` directory change**.
+
+### Workflow Steps:
+
+1. **Dependencies**: Installs required dependencies.
+2. **Linter**: Runs `flake8` to ensure code quality.
+3. **Tests**: Runs `pytest` to validate functionality.
+4. **Static Code Analysis**: Performs static code analysis with Snyk.
+5. **Docker Build & Push (Distroless)**: Builds and pushes the `distroless` Docker image.
+
+Test results and Snyk findings are uploaded as artifacts.
+
+The Docker image is built using the `distroless.Dockerfile` and pushed to Docker Hub as `app_python:distroless`.
